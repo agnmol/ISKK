@@ -1,0 +1,320 @@
+@CHARSET "UTF-8";
+
+body {
+    margin: 0;
+    height: 100%;
+    color: #25292B; /* teksto spalva */
+    font-family: Arial, Helvetica, sans-serif; /* šriftas */
+    background-color: #e3e3e3;
+    font-size: 12px;
+
+}
+a {
+    color: #25292B;
+}
+p {
+   margin-left: 15px;
+}
+
+/* pagrindinis puslapio blokas */
+#body {
+
+    float: left;
+    width: 100%;
+}
+
+/* viršutinė puslapio dalis */
+#header {
+    width: 100%;
+    height: 90px;
+    background-color: #cccccc;
+    border: 1px solid silver; /* rėmelis */
+    float: left;
+}
+
+#slogan {
+    text-align: center;
+    color: #25292B;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+/* turinio blokelis */
+#content {
+    width: 100%;
+    background-color: #fff;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    float: left;
+    height:100%;
+    position:relative;
+    padding-bottom:120px;
+}
+
+/* pagrindinio meniu blokelis */
+#topMenu {
+    overflow: hidden;
+    margin-bottom: 2em;
+    background: #25292B;
+    height: 50px;
+}
+
+#topMenu ul {
+    margin: 0;
+    list-style: none;
+    line-height: normal;
+    text-align: center;
+}
+
+#topMenu li {
+    display: inline-block;
+}
+
+#topMenu li a {
+    display: block;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding: 0 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#topMenu li a:hover {
+    text-decoration: underline; /* nustatome nuorodos pabraukimą užvedus pele */
+}
+
+#topMenu li a.active {
+    background: #FFC31F;
+}
+
+
+
+/* kairysis puslapio blokelis */
+#contentLeft {
+    width: 20%;
+    float: left; /* blokelio pozicija */
+
+}
+
+#contentLeft li {
+
+    line-height: 25px;
+    list-style: none;
+}
+
+#contentLeft li a {
+    display: block;
+    text-decoration: none;
+    margin-left: 5px;
+    border-bottom: 1px solid silver;
+}
+
+#contentLeft li a:hover {
+    text-decoration: underline;
+}
+
+#contentLeft li a.active {
+    background: #FFC31F;
+}
+
+#contentLeft ul {
+    padding-inline-start: 20px;
+}
+
+#contentLeft h2 {
+    border-bottom: 1px solid #484646;
+    font-size: 15px;
+    font-weight: normal;
+    color: #25292B;
+    letter-spacing: 0.2px;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+}
+
+
+/* turinio blokelis */
+#contentRight {
+    width: 79%;
+    min-height: auto; /* minimalus blokelio aukštis */
+    border-left: 1px solid silver;
+    float: left; /* blokelio pozicija */
+}
+
+
+
+h2#pageTitle {
+    font-size: 26px;
+    margin: 10px 0px 20px 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFC31F;
+}
+
+.bookItem {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6E6E6E;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+}
+
+.bookItem .title {
+    height:40px;
+    text-align: center;
+}
+
+.bookItem .description {
+    margin: 10px 5px 10px 10px;
+
+}
+
+.book p {
+    margin-left: 15px;
+    margin-right: 30%;
+    width: 50%;
+    border-left: 0px
+}
+#contentRight h3 {
+    margin: 10px 0px 20px 15px;
+    font-weight: bold;
+}
+
+/* apatinė puslapio dalis */
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#cccccc;
+}
+
+#contentRight .pagination {
+    margin-left: 15px;
+    width: calc(100% - 15px);
+    float: right;
+    position:absolute;
+    bottom:30px;
+    height: 35px;
+
+
+}
+#contentRight .row {
+    float: right;
+    width: 100%;
+    margin-top: 6px;
+}
+
+#contentRight .leftcol {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+    margin-left: 50px;
+}
+
+#contentRight .rightcol {
+    float: left;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 6px;
+}
+#contentRight input[type=text], select {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+#contentRight input[type=submit] {
+    background-color: #25292B;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    float: right;
+    margin-right: 45%;
+}
+
+#contentRight input[type=submit]:hover {
+    background-color: #FFC31F;
+}
+
+.review{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6E6E6E;
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.review h3{
+    margin-left: 15px;
+}
+.review h4{
+    margin-left: 15px;
+    font-weight: bolder;
+}
+.review p{
+    margin-left: 15px;
+}
+
+button {
+    margin-left: 15px;
+}
+
+
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-right: 200px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #383d41;
+    color: white;
+}
+
+.btn {
+    background-color: #383d41;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #FFC31F;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
